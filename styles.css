@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    background: linear-gradient(to right, #ff9497, #f4d9d2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
   }
   
   .card {
-    width: 300px;
+    width: 350px;
     height: 400px;
     position: relative;
     perspective: 1000px;
