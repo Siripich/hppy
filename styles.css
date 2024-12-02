@@ -183,18 +183,42 @@ body {
   left: 0;
   top: 0;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+  display: flex; /* เปิดใช้งาน Flexbox */
+  flex-direction: column; /* เรียงในแนวตั้ง */
+  justify-content: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+  align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
 }
 
-.cardInside img {
-    width: 100%; /* กำหนดความกว้างของรูป */
-    height: 100%; /* ความสูงของรูปจะเต็มการ์ด */
-    object-fit: cover; /* ให้รูปไม่เสียสัดส่วน */
-    position: absolute;
-    top: 0;
-    left: 100; /* ย้ายรูปไปที่ฝั่งซ้าย */
-    z-index: -1; /* รูปจะอยู่ข้างหลังข้อความ */
+
+
+/* Animation for floating effect */
+@keyframes floatIn {
+    0% {
+      transform: translateX(-100px); /* เริ่มจากตำแหน่งด้านซ้าย */
+      opacity: 0; /* เริ่มแบบโปร่งใส */
+    }
+    100% {
+      transform: translateX(0); /* เคลื่อนที่มาสู่ตำแหน่งปกติ */
+      opacity: 1; /* แสดงรูปชัดเจน */
+    }
   }
 
+  
+  .cardInside img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0; /* เริ่มต้นแบบโปร่งใส */
+    animation: floatIn 1s ease-out forwards;
+    animation-delay: 1s; /* หน่วงเวลา 1 วินาที */
+  }
+  
 .inside-text {
   position: relative;
   text-align: center;
@@ -210,7 +234,7 @@ body {
 
 .wishes {
   position: relative;
-  top: -100px;
+  top: 100px;
   margin: 25px;
 }
 

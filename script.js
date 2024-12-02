@@ -12,7 +12,7 @@ birthdayCard.addEventListener('click', () => {
 
 // ฟังก์ชันเริ่มหิมะตก
 function startSnowfall() {
-  setInterval(createSnowflake, 150); // สร้างหิมะตกทุก 50ms
+  setInterval(createSnowflake, 200); // สร้างหิมะตกทุก 50ms
 }
 
 // ฟังก์ชันสร้างหิมะตก
