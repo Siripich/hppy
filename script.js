@@ -24,7 +24,7 @@ function createSnowflake() {
   // กำหนดตำแหน่งเริ่มต้น
   snowflake.style.left = `${Math.random() * 100}vw`;
   snowflake.style.animationDuration = `${Math.random() * 3 + 7}s`; // ความเร็วในการตก
-  snowflake.style.fontSize = `${Math.random() * 10 + 15}px`;
+  snowflake.style.fontSize = `${Math.random() * 5 + 10}px`;
 
   snowContainer.appendChild(snowflake);
 

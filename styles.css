@@ -281,3 +281,48 @@ margin-left: 56%;
 .open-btn, .close-btn {
     z-index: 2;
   }
+
+
+  @media (min-width: 319px) and (max-width: 426px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .birthdayCard {
+    width: 200px; /* ปรับขนาดการ์ด */
+    height: 300px;
+    transform: perspective(2000px); /* ลด perspective */
+  }
+
+  .cardFront, .cardInside {
+    width: 200px;
+    height: 300px;
+  }
+
+  .happy, .toyou, .bday  {
+    font-size: 18px; /* ลดขนาดฟอนต์ */
+    padding: 10px;
+  }
+
+
+  .cardInside img {
+    width: 50%; /* ปรับให้เล็กลง */
+    height: 50%;
+  }
+
+  .wishes {
+    top: 50px; /* ปรับตำแหน่งข้อความ */
+    font-size: 12px; /* ลดขนาดฟอนต์ */
+  }
+
+  .HBD {
+    font-size: 10px; /* ลดขนาดฟอนต์ */
+    margin-left: 50%;
+  }
+
+  .name {
+    font-size: 14px; /* ลดขนาดฟอนต์ */
+    margin-left: 0;
+  }
+}
