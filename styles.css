@@ -234,17 +234,20 @@ body {
 
 .wishes {
   position: relative;
-  top: 100px;
+  top: 70px;
   margin: 25px;
 }
 
-p {
+.HBD {
   font-family: 'Brush Script MT', cursive;
   color: #333;
+  font-size: 13px;
+margin-left: 56%;
 }
 
 .name {
-  margin-left: 150px;
+  margin-left: 1px;
+  font-size: 16px;
 }
 
 /* Snowfall Effect */
